@@ -210,28 +210,28 @@
 
 \sumpara The context defines the model and the claims tested by the review. \sumparaend
 \noindent\textbf{Context.}
-\fin The manuscript assigns uncertain tasks in a two-stage multiple-knapsack model. \fine
-\fin Its Benders method separates initial assignments from scenario subproblems, and the review checks the human-centered claim, integer decisions, and experiments against the code. \fine
+\fin The manuscript assigns uncertain tasks with a two-stage multiple-knapsack model. \fine
+\fin Its Benders method separates assignments from scenario subproblems; the review checks human outcomes, integer feasibility, and experiments against code. \fine
 
 \updatehead{1}{Current objective}
 \sumpara The objective rebuilds the manuscript around a contribution supported by executable evidence. \sumparaend
 \begin{tightitems}
-  \item \fin Rebuild the paper around a defensible contribution, feasible integer assignments, and executable stochastic, human-outcome, and algorithmic benchmarks. \fine
+  \item \fin Rebuild the paper around a defensible contribution, integer assignments, and executable stochastic, human-outcome, and algorithmic benchmarks. \fine
 \end{tightitems}
 
 \updatehead{2}{Progress since the last meeting}
 \sumpara The progress combines the full manuscript dissection with the four-paper benchmark review. \sumparaend
 \begin{tightitems}
-  \item \fin \statusdone Produced a full dissection of the formulation, decomposition, results, ten advisor points, and revision order. \fine
-  \item \fin \statusdone Reviewed two scheduling studies for fairness and uncertainty evidence and two knapsack studies for algorithm evidence \cite{gulmez2026,perreault2025,mancini2024,masmoudi2024}. \fine
-  \item \fin \statusblocked The claim remains blocked because the feasibility proposition is false and reported assignments come from a continuous relaxation. \fine
+  \item \fin \statusdone Mapped the formulation, results, and ten advisor points into a revision order. \fine
+  \item \fin \statusdone Reviewed two scheduling papers for human and uncertainty evidence and two knapsack papers for algorithms \cite{gulmez2026,perreault2025,mancini2024,masmoudi2024}. \fine
+  \item \fin \statusblocked The manuscript cannot yet claim its algorithms yield implementable employee-task assignments: the feasibility proposition is false for the displayed model, and the assignment table reports fractional LP values instead of a binary policy. \fine
 \end{tightitems}
 
 \updatehead{3}{Key result or lesson}
 \sumpara The key result narrows the contribution and identifies the concrete technical blockers. \sumparaend
 \begin{tightitems}
   \item \fin The defensible core is a time-discounted formulation plus a decomposition proof of concept for its continuous relaxation. \fine
-  \item \fin An all-zero solution refutes the feasibility claim, and 12 of 21 assignment variables are fractional rather than feasible integer decisions. \fine
+  \item \fin The model permits zero effort and completion regardless of workload, so its workload-capacity feasibility condition is not necessary. \fine
   \item \fin The closest literature turns the broad novelty claim into three tests: stochastic value, human-outcome value, and algorithmic value. \fine
 \end{tightitems}
 
