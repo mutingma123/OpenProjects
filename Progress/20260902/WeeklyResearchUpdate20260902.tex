@@ -39,12 +39,10 @@
 \newcommand{\updatehead}[2]{%
   \vspace{0.22em}\noindent\textbf{\textcolor{uablue}{#1. #2}}\par\vspace{0.04em}}
 \newcommand{\projectline}[1]{%
-  \noindent\colorbox{uablue!7}{%
-    \parbox{\dimexpr\textwidth-2\fboxsep\relax}{%
-      \footnotesize\textbf{Name:} Muting (Don) Ma\hfill
-      \textbf{Project:} #1\hfill
-      \textbf{Date:} September 2, 2026}}
-  \vspace{0.3em}}
+  {\small\noindent\textbf{Name:} Muting (Don) Ma\hfill
+    \textbf{Project:} #1\hfill
+    \textbf{Date:} September 2, 2026\par}
+  \vspace{0.18em}\hrule\vspace{0.42em}}
 \newenvironment{tightitems}{%
   \begin{itemize}[leftmargin=1.15em,label=\textcolor{uablue}{\scriptsize$\bullet$},
     topsep=0.08em,itemsep=0.17em,parsep=0pt,partopsep=0pt]}{\end{itemize}}
@@ -86,8 +84,6 @@
 \label{sec:retrieval}
 \projectline{Embedding Retrieval Capacity}
 
-\begin{minipage}[t]{0.59\textwidth}
-\vspace{0pt}
 \updatehead{1}{Current objective}
 \sumpara The objective transfers the representation result into the proposal's decision setting. \sumparaend
 \begin{tightitems}
@@ -109,15 +105,14 @@
   \item \fin LIMIT shows a further gap between geometric capacity and learned use of that capacity. \fine
   \item \fin The \artifact{https://github.com/mutingma123/OpenProjects/blob/main/EmbeddingRetrievalLimitations/Figures/RetrievalCapacityMap.png}{public causal map} connects both findings to decision reliability. \fine
 \end{tightitems}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.37\textwidth}
-\vspace{0pt}
-\begin{center}
-  \href{https://github.com/mutingma123/OpenProjects/blob/main/EmbeddingRetrievalLimitations/Figures/RetrievalCapacityMap.png}{%
-    \includegraphics[width=\linewidth]{../../EmbeddingRetrievalLimitations/Figures/RetrievalCapacityMap.png}}
 
-  \scriptsize\textcolor{sectiongray}{Evidence chain and proposal transfer}
-\end{center}
+\begin{figure}[!ht]
+  \centering
+  \href{https://github.com/mutingma123/OpenProjects/blob/main/EmbeddingRetrievalLimitations/Figures/RetrievalCapacityMap.png}{%
+    \includegraphics[width=0.58\textwidth]{../../EmbeddingRetrievalLimitations/Figures/RetrievalCapacityMap.png}}
+  \caption{Evidence chain from retrieval capacity to decision reliability.}
+  \label{fig:retrieval-map}
+\end{figure}
 
 \updatehead{4}{Input needed from Dr. Gong}
 \sumpara The requested input fixes the theorem target and the empirical comparison. \sumparaend
@@ -135,18 +130,15 @@
 \end{tightitems}
 
 \vspace{0.25em}
-\footnotesize\textbf{Public artifacts:}
+{\footnotesize\textbf{Public artifacts:}
 \artifact{https://github.com/mutingma123/OpenProjects/tree/main/EmbeddingRetrievalLimitations}{project folder};
-\artifact{https://github.com/mutingma123/OpenProjects/tree/main/EmbeddingRetrievalLimitations/Figures}{selected snapshot}.
-\end{minipage}
+\artifact{https://github.com/mutingma123/OpenProjects/tree/main/EmbeddingRetrievalLimitations/Figures}{selected snapshot}.\par}
 
 \clearpage
 \section{Bi-objective Trajectory Revision C1}
 \label{sec:biobj}
 \projectline{Bi-objective Trajectory Revision C1}
 
-\begin{minipage}[t]{0.59\textwidth}
-\vspace{0pt}
 \updatehead{1}{Current objective}
 \sumpara The objective closes the mathematical repair and the remaining evidence chain. \sumparaend
 \begin{tightitems}
@@ -168,15 +160,14 @@
   \item \fin Nested pair-pass events justify the least gap, and linearity permits the schedule sum without pair independence. \fine
   \item \fin The within-instance decision survives, but absolute cost remains model conditional until calibration. \fine
 \end{tightitems}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.37\textwidth}
-\vspace{0pt}
-\begin{center}
-  \href{https://github.com/mutingma123/OpenProjects/blob/main/BiObjectiveRevisionC1/Figures/ExpectedCollisionCost.png}{%
-    \includegraphics[width=\linewidth]{../../BiObjectiveRevisionC1/Figures/ExpectedCollisionCost.png}}
 
-  \scriptsize\textcolor{sectiongray}{Adopted least-gap cost construction}
-\end{center}
+\begin{figure}[!ht]
+  \centering
+  \href{https://github.com/mutingma123/OpenProjects/blob/main/BiObjectiveRevisionC1/Figures/ExpectedCollisionCost.png}{%
+    \includegraphics[width=0.58\textwidth]{../../BiObjectiveRevisionC1/Figures/ExpectedCollisionCost.png}}
+  \caption{Adopted least-gap expected collision cost construction.}
+  \label{fig:collision-cost}
+\end{figure}
 
 \updatehead{4}{Input needed from Dr. Gong}
 \sumpara The requested input fixes the model and the order of the next evidence work. \sumparaend
@@ -194,18 +185,15 @@
 \end{tightitems}
 
 \vspace{0.25em}
-\footnotesize\textbf{Public artifacts:}
+{\footnotesize\textbf{Public artifacts:}
 \artifact{https://github.com/mutingma123/OpenProjects/tree/main/BiObjectiveRevisionC1}{project folder};
-\artifact{https://github.com/mutingma123/OpenProjects/tree/main/BiObjectiveRevisionC1/Figures}{selected snapshot}.
-\end{minipage}
+\artifact{https://github.com/mutingma123/OpenProjects/tree/main/BiObjectiveRevisionC1/Figures}{selected snapshot}.\par}
 
 \clearpage
 \section{Stochastic Multiple Knapsack Manuscript}
 \label{sec:knapsack}
 \projectline{Stochastic Multiple Knapsack Manuscript}
 
-\begin{minipage}[t]{0.59\textwidth}
-\vspace{0pt}
 \updatehead{1}{Current objective}
 \sumpara The objective rebuilds the manuscript around a contribution supported by executable evidence. \sumparaend
 \begin{tightitems}
@@ -227,15 +215,14 @@
   \item \fin Zero effort and zero completion contradict the current feasibility proposition, while 12 of 21 reported assignments are fractional. \fine
   \item \fin The \artifact{https://github.com/mutingma123/OpenProjects/blob/main/StochasticMultipleKnapsack/Figures/ManuscriptFinalVerdict.png}{public verdict} states the resulting revision boundary. \fine
 \end{tightitems}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.37\textwidth}
-\vspace{0pt}
-\begin{center}
-  \href{https://github.com/mutingma123/OpenProjects/blob/main/StochasticMultipleKnapsack/Figures/ManuscriptFinalVerdict.png}{%
-    \includegraphics[width=\linewidth]{../../StochasticMultipleKnapsack/Figures/ManuscriptFinalVerdict.png}}
 
-  \scriptsize\textcolor{sectiongray}{Current technical and editorial verdict}
-\end{center}
+\begin{figure}[!ht]
+  \centering
+  \href{https://github.com/mutingma123/OpenProjects/blob/main/StochasticMultipleKnapsack/Figures/ManuscriptFinalVerdict.png}{%
+    \includegraphics[width=0.58\textwidth]{../../StochasticMultipleKnapsack/Figures/ManuscriptFinalVerdict.png}}
+  \caption{Current technical and editorial verdict.}
+  \label{fig:knapsack-verdict}
+\end{figure}
 
 \updatehead{4}{Input needed from Dr. Gong}
 \sumpara The requested input fixes the paper's identity and the integer solution route. \sumparaend
@@ -253,10 +240,9 @@
 \end{tightitems}
 
 \vspace{0.25em}
-\footnotesize\textbf{Public artifacts:}
+{\footnotesize\textbf{Public artifacts:}
 \artifact{https://github.com/mutingma123/OpenProjects/tree/main/StochasticMultipleKnapsack}{project folder};
-\artifact{https://github.com/mutingma123/OpenProjects/tree/main/StochasticMultipleKnapsack/Figures}{selected snapshot}.
-\end{minipage}
+\artifact{https://github.com/mutingma123/OpenProjects/tree/main/StochasticMultipleKnapsack/Figures}{selected snapshot}.\par}
 
 \clearpage
 \phantomsection
