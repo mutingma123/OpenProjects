@@ -65,7 +65,7 @@
   \vspace{2.2em}
   \sumpara The front-page note states the report's scope and its evidence base. \sumparaend
   \parbox{0.80\textwidth}{\small\centering
-    \fin This report covers one project, the revision of the bi-objective connected and automated vehicle intersection manuscript, since the September 2, 2026 meeting. \fine
+    \fin This report covers one project, the revision of the bi-objective connected and automated vehicle intersection manuscript, since the September 8, 2026 meeting. \fine
     \fin Its five sections follow the requested update format, and every claim traces to the commit history of the manuscript repository, the new runtime package, and the retired legacy codebase. \fine
     \fin The referenced works follow the five sections. \fine}
 \end{center}
@@ -88,15 +88,16 @@
 \sumpara The context fixes the decision problem and the scope of the present revision. \sumparaend
 \noindent\textbf{Context.}
 \fin At a reservation-based intersection, the manuscript schedules connected and automated vehicles by trading average speed against priced collision risk \cite{ma2025socio}. \fine
-\fin The revision answers the six experiments requested at the August meeting, so the evidence, not the exposition, is the deliverable. \fine
-\fin Its benchmark set carries six controller classes, with the published speed-maximization method mapped onto the delay-only class \cite{ma2023speed}. \fine
+\fin The September 8, 2026 comments name the experiments as the remaining concern and retarget the paper from Transportation Research Part C to Transportation Research Record or the Journal of Intelligent Transportation Systems \cite{gong2026}. \fine
+\fin The six requested experiments are stochastic timing errors on every trajectory, at least thirty seeds per configuration, synchronized, random, and platooned arrivals, one, two, and three vehicles per lane with rear-end exposure admitted, turning splits of 25, 50, and 75 percent, and stronger baselines. \fine
+\fin The deliverable is therefore the evidence, not the exposition, and the baseline set carries six controller classes with the published speed-maximization method mapped onto the delay-only class \cite{ma2023speed}. \fine
 
 \subsection{Objective}
 \label{sec:objective:statement}
 
 \sumpara The objective is stated in one sentence, as the update format requires. \sumparaend
 \begin{tightitems}
-  \item \fin Deliver the six requested experiments as schedules that are certified optimal, independently validated, and reproducible from saved artifacts. \fine
+  \item \fin Deliver the six experiments of the September 8 note as schedules that are certified optimal, independently validated, and reproducible from saved artifacts. \fine
 \end{tightitems}
 
 \section{Progress Since the Last Meeting}
@@ -104,7 +105,7 @@
 
 \sumpara The progress separates the completed rebuild from the production run that is now blocked. \sumparaend
 \begin{tightitems}
-  \item \fin \statusdone Rebuilt the study as eleven component contracts in the manuscript repository and a matching \texttt{biobj} runtime package, retiring the legacy BiCAVO codebase after its audit against the six experiment plan. \fine
+  \item \fin \statusdone Expanded the six requested experiments into seven cases by thirty seeds by twenty-one rows, which is 4,410 report rows, then rebuilt the study as eleven component contracts and a matching \texttt{biobj} runtime package, retiring the legacy BiCAVO codebase after its audit against that plan. \fine
   \item \fin \statusdone Replaced the rear-end time-to-collision surrogate with a priced contact probability, replaced the thousand draw replay with exact expectations at each timing error width, and widened initial following gaps to hold modeled contact risk at or below 0.1 percent. \fine
   \item \fin \statusblocked The first production campaign ran twelve workers for 2 hours and 52 minutes and was stopped: 14 of 4,410 report rows were saved, and 13 of those 14 fail the independent validator. \fine
 \end{tightitems}
@@ -156,6 +157,10 @@
 \addcontentsline{toc}{section}{References}
 \begin{thebibliography}{9}
 \small
+
+\bibitem{gong2026}
+\fin J. Gong, ``Re: TRC manuscript status and help needed for submission,'' comments on the manuscript experiments and submission venue, September 8, 2026. \fine
+Held locally as \texttt{Comments/Gong/20260908/TRRComments.pdf} in the manuscript repository.
 
 \bibitem{ma2025socio}
 \fin M. Ma and M. Yavuz, ``Socioeconomic Tradeoff on Connected and Automated Vehicles Scheduling at a Reservation-based Intersection,'' Social Science Research Network, 2025. \fine
